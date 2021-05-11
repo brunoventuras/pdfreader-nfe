@@ -5,10 +5,10 @@ const fs = require("fs");
 // var text = "";
 
 
-// new pdfReader.PdfReader().parseFileItems('BLOJAF 172927.pdf', (err, item) => {
+// new pdfReader.PdfReader().parseFileItems('nf/BLOJAF 172927.pdf', (err, item) => {
 //   if(item !== undefined){
 //     item.text && fs.appendFileSync('meuarquivo2.txt', item.text)
-//   }  
+//   }
 // });
 
 fs.readFile('meuarquivo2.txt', 'utf8' , (err, data) => {

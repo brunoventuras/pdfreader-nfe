@@ -22,7 +22,7 @@ const renderMatrix = (matrix) =>
 
 var table = new pdfreader.TableParser();
 
-new pdfreader.PdfReader().parseFileItems('BLOJAF172883.pdf', function (err, item) {
+new pdfreader.PdfReader().parseFileItems('nf/NF 660156 Agrometal.pdf', function (err, item) {
   if (!item || item.page) {
     // end of file, or page
     console.log(renderMatrix(table.getMatrix()));
