@@ -1,0 +1,9 @@
+{
+  "name": "pdfreaderProjerct",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "pdfreader": "^1.2.8"
+  }
+}
