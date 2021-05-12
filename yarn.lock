@@ -15,6 +15,11 @@
   "resolved" "https://registry.npmjs.org/minimist/-/minimist-0.0.10.tgz"
   "version" "0.0.10"
 
+"node-tesseract-ocr@^2.2.1":
+  "integrity" "sha512-Q9cD79JGpPNQBxbi1fV+OAsTxYKLpx22sagsxSyKbu1u+t6UarApf5m32uVc8a5QAP1Wk7fIPN0aJFGGEE9DyQ=="
+  "resolved" "https://registry.npmjs.org/node-tesseract-ocr/-/node-tesseract-ocr-2.2.1.tgz"
+  "version" "2.2.1"
+
 "optimist@^0.6.1":
   "integrity" "sha1-2j6nRob6IaGaERwybpDrFaAZZoY="
   "resolved" "https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz"
@@ -33,7 +38,7 @@
     "optimist" "^0.6.1"
     "xmldom" "^0.3.0"
 
-"pdfreader@^1.2.8":
+"pdfreader@^1.0.10":
   "integrity" "sha512-LD9NdIaY1vc8kUcuFpJPHJF4nbyc1HHL3TehyiEw9KC7nN175pOfmdRUkjUGW28xr2f+ADLLGLl7ZyDXL7EBRw=="
   "resolved" "https://registry.npmjs.org/pdfreader/-/pdfreader-1.2.8.tgz"
   "version" "1.2.8"
@@ -46,6 +51,4 @@
   "version" "0.0.3"
 
 "xmldom@^0.3.0":
-  "integrity" "sha512-z9s6k3wxE+aZHgXYxSTpGDo7BYOUfJsIRyoZiX6HTjwpwfS2wpQBQKa2fD+ShLyPkqDYo5ud7KitmLZ2Cd6r0g=="
-  "resolved" "https://registry.npmjs.org/xmldom/-/xmldom-0.3.0.tgz"
   "version" "0.3.0"
