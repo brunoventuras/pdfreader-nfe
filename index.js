@@ -22,7 +22,7 @@ const renderMatrix = (matrix) =>
 
 var table = new pdfreader.TableParser();
 
-new pdfreader.PdfReader().parseFileItems('nf/nfBRUNO.pdf', function (err, item) {
+new pdfreader.PdfReader().parseFileItems('nf/BLOJAF172883.pdf', function (err, item) {
   if (!item || item.page) {
     // end of file, or page
     console.log(renderMatrix(table.getMatrix()));

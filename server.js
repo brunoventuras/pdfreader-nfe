@@ -11,17 +11,14 @@ const fs = require("fs");
 //   }
 // });
 
-fs.readFile('nf/nfBRUNO.pdf', 'base64' , (err, data) => {
+fs.readFile('meuarquivo2.txt', 'utf8' , (err, data) => {
   if (err) {
     console.log(err)
     return
   }
-  // const initial = parseInt(data.indexOf('DANFE')) + 5;
-  // console.log(data.substr(initial, 54))
-  // console.log(data)
-  let buff = new Buffer(data, 'base64');
-  let text = buff.toString('ascii');
+  const initial = parseInt(data.indexOf('DANFE')) + 5;
+  console.log(data.substr(initial, 54))
 
-  console.log('"' + data + '" converted from Base64 to ASCII is "' + text + '"');
+
 })
 
