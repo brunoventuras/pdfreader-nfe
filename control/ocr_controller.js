@@ -17,12 +17,12 @@ const ctx = canvas.getContext('2d')
 ctx.beginPath()
 // ctx.lineTo(50, 102)
 // ctx.arc(0, 0, 160, 0, Math.PI * 2, true)
-ctx.rect(550,300,520,45)
+ctx.rect(600,300,520,45)
 ctx.clip()
 // ctx.lineTo(50 + text.width, 102)
 ctx.stroke()
-// ctx.scale(1.6,1.5)
-ctx.scale(2.5,2)
+ctx.scale(1.6,1.5)
+// ctx.scale(2.5,2)
 
 module.exports = {
   async index(request, response, next){
@@ -32,7 +32,7 @@ module.exports = {
           ctx.drawImage(image, 0, 0, 720, 1280)
           return canvas.toDataURL();
         }).catch(err => {
-          console.log('oh no!', err)
+          console.log('Ops!', err)
         })
         let base64Image = myimg.split(';base64,').pop();
         fs.writeFile('./Upload/image.png', base64Image, {encoding: 'base64'}, function(err) {
@@ -40,8 +40,8 @@ module.exports = {
         });
 
         const result = await Tesseract.recognize(
-          `./Upload/${request.file.filename}`,
-          // './Upload/image.png',
+          // `./Upload/${request.file.filename}`,
+          './Upload/image.png',
           'por',
           // { logger: m => console.log(m) }
         ).then(({ data: { text } }) => {
