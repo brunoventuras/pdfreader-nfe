@@ -2,7 +2,7 @@ const fs = require("fs");
 const Tesseract = require("tesseract.js");
 
 const { createCanvas, loadImage } = require('canvas')
-const canvas = createCanvas(1000, 500)
+const canvas = createCanvas(780, 1280)
 const ctx = canvas.getContext('2d')
 
 // Write "Awesome!"
@@ -17,11 +17,12 @@ const ctx = canvas.getContext('2d')
 ctx.beginPath()
 // ctx.lineTo(50, 102)
 // ctx.arc(0, 0, 160, 0, Math.PI * 2, true)
-ctx.rect(600,300,520,45)
+// ctx.rect(600,300,520,45)
+ctx.rect(50,50,1280,780)
 ctx.clip()
 // ctx.lineTo(50 + text.width, 102)
 ctx.stroke()
-ctx.scale(1.6,1.5)
+// ctx.scale(1.6,1.5)
 // ctx.scale(2.5,2)
 
 module.exports = {
